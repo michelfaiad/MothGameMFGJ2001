@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1279313369681782760}
   - component: {fileID: 1279313369681782766}
   - component: {fileID: 3858915747442974007}
+  - component: {fileID: 314780503}
   m_Layer: 0
   m_Name: Moth
   m_TagString: Player
@@ -46,7 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a7aa52b11bc1d4c8a593ffa73a3bcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flapStrength: 20
+  flapStrength: 3
+  fowardStrength: 2
+  flapRate: 0.2
 --- !u!212 &1279313369681782760
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -66,7 +69,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 731885178a26185488e3652ba91eb030, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -131,3 +134,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43d2926671b2d484bba2561424a29a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &314780503
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279313369681782767}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 2}
+  m_Direction: 0
